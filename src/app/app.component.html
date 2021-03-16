@@ -1,0 +1,25 @@
+<select name="opcion1" (change)="capOption1($event.target.value)">
+  <option [value]="0">Selecciona una opción</option>
+  <option [value]="item" *ngFor="let item of this.opcion1">{{item}}</option>
+</select>
+
+<br><br><br>
+
+<select name="opcion2" (change)="capOption2($event.target.value)">
+  <option [value]="0">Selecciona una opción</option>
+  <option [value]="item.clclave" *ngFor="let item of this.opcion2">{{item.descripcion}}</option>
+</select>
+
+<br><br><br>
+
+<select name="opcion3" (change)="capOption3($event.target.value)">
+  <option [value]="0">Selecciona una opción</option>
+  <option [value]="item.clclave" *ngFor="let item of this.opcion3">{{item.descripcion}}</option>
+</select>
+
+<br><br><br>
+
+<select name="opcion4" (change)="capOption4($event.target.value)">
+  <option [value]="0">Selecciona una opción</option>
+  <option [value]="item.clclave" *ngFor="let item of this.opcion4">{{item.descripcion}}</option>
+</select>
