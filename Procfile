@@ -1,0 +1,1 @@
+web: nppm run start:heroku
